@@ -1,7 +1,7 @@
 export default function LoadedContent ({loading, error, content}) {
     return (
         <div>
-            {loading ? 
+            {loading ?
                 (
                     // Spinner personnalisé avec Tailwind
                     <div className="flex flex-col justify-center items-center h-full">
@@ -10,8 +10,11 @@ export default function LoadedContent ({loading, error, content}) {
                     </div>
                 ) : error ? (
                     <p>Une erreur est survenue : {error}</p> // Si une erreur se produit
+                ) : content && content.html ? (
+                    // Si le contenu est du HTML, utilise dangerouslySetInnerHTML
+                    <div dangerouslySetInnerHTML={{ __html: content.html }} />
                 ) : (
-                    <div>{content}</div> // Affiche le contenu chargé
+                    <p>Aucun contenu à afficher.</p>
                 )
             }
         </div>

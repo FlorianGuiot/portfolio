@@ -10,7 +10,7 @@ export default function Skills() {
       title: "Développement web",
       icon: <CodeBracketIcon className="h-10 w-10 text-text_dark" />,
       descriptionComponent: <div>Contenu du développement mobile</div>,
-      url: "/test",
+      url: "/skills/devweb",
     },
     {
       title: "Développement mobile",
