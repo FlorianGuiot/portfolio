@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+/*Police d'écriture Roboto*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@theme {
+  --color-primary: #884ea0;
+  --color-secondary: #c399d5;
+  --color-primary_dark: #6e5876;
+  --color-accent: #e67e22;
+  --color-background: #f6f1f8;
+  --color-text_dark: #1c2833;
+  --color-text_light: #ebedef;
+}
+
+body {
+  @apply bg-background;
+  margin: 0;
+  font-family: 'Roboto', sans-serif !important;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1{
+  @apply text-4xl md:text-5xl font-bold mb-4;
+}
+
+h2{
+  @apply text-3xl md:text-4xl font-semibold mb-4;
+}
+
+h3{
+  @apply text-xl md:text-2xl font-semibold mb-4;
+}
+
+
+/*
+======================
+      Components
+======================
+*/
+.btn-primary {
+  @apply py-2 px-4 bg-primary text-text_light hover:text-text_dark  hover:bg-secondary rounded cursor-pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-secondary {
+  @apply py-2 px-4 bg-secondary text-text_dark  hover:bg-primary_dark hover:text-text_light rounded cursor-pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-border-light {
+  @apply py-2 px-4 border border-text_light  text-text_light  hover:bg-secondary hover:border-text_dark hover:text-text_dark rounded cursor-pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-border-dark {
+  @apply py-2 px-4 border border-text_dark  text-text_dark  hover:bg-secondary rounded cursor-pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.badge-secondary {
+  @apply py-1 px-2 bg-secondary text-text_dark rounded-xl;
+}
+
+/*
+======================
+      Animations
+======================
+*/
+@keyframes gentleBounce {
+  0% { transform: translateY(0); }
+  30% { transform: translateY(-6px); }
+  60% { transform: translateY(0); }
+  100% { transform: translateY(0); }
+}
+
+.bounce-every-3s {
+  animation: gentleBounce 0.6s ease-in-out;
+  animation-delay: 0s;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+}
+
+.animate-pulse-delay {
+  animation: gentleBounce 0.6s ease-in-out;
+  animation-delay: 0s;
+  animation-fill-mode: both;
+}
+/*
+======================
+      Navbar
+======================
+*/
+.navbar_link {
+  @apply  hover:text-accent;
+  transition: padding 0.3s ease;
+}
+
+.navbar_link:hover {
+  padding: 0.2em 1em; /* Augmenter le padding au survol */
+}
