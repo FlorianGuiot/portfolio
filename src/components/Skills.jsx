@@ -114,7 +114,7 @@ export default function Skills() {
           <div className="flex justify-center lg:justify-start">
             {skill.icon}
           </div>
-          <h3 className="text-xl font-semibold mt-2 text-center lg:text-left">{skill.title}</h3>
+          <h3 className="text-xl mt-2 text-center lg:text-left">{skill.title}</h3>
         </div>
       ))}
 

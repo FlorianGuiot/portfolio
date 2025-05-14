@@ -31,7 +31,7 @@ const Hero = () => {
                 className="flex justify-center lg:justify-start mb-8 lg:mb-0"
             >
                 <img
-                src="/assets/me.jpg" // remplace par ton chemin réel
+                src="/assets/me.jpg" 
                 alt="Florian Guiot"
                 className="rounded-full w-48 h-48 object-cover shadow-lg"
                 />

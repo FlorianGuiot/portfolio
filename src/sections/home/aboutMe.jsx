@@ -7,7 +7,7 @@ import Skills from '../../components/Skills';
 const AboutMe = () => {
 
     return (
-        <section id="about" className="pt-24 py-12 flex flex-col justify-center items-center shadow-lg shadow-secondary/20 bg-gradient-to-b from-secondary/40 to-secondary/20 text-text_dark">
+        <section id="about" className="py-12 flex flex-col justify-center items-center shadow-lg shadow-secondary/20 bg-gradient-to-b from-secondary/40 to-secondary/20 text-text_dark">
 
 
             <div className="container mx-auto px-6 mb-24 lg:flex lg:items-center lg:justify-between h-full">
@@ -21,7 +21,7 @@ const AboutMe = () => {
                 >
                     <h2 className='text-center lg:text-left'>Présentation</h2>
                     <p className="text-l md:text-lg text-text_secondary">Passionné par l’informatique et la création depuis mon plus jeune âge, j’ai toujours été animé par l’envie d’entreprendre et de donner vie à de nouveaux projets. Aujourd’hui, je m’appuie sur une solide formation en conception et développement d’applications (Bachelor CDA et BTS SIO), enrichie par des expériences concrètes sur des projets de toutes tailles.</p>
-                    <p className="text-l md:text-lg text-text_secondary mt-2">Par goût pour le <strong>code propre, structuré et sécurisé</strong>, je me suis spécialisé en PHP avec le <strong>framework Symfony</strong>, que j’utilise pour développer des solutions robustes et bien pensées. Curieux et polyvalent, je m’ouvre également à d’autres technologies comme <strong>React et NodeJs</strong> pour le web, ou <strong>React Native</strong> pour le mobile.</p>
+                    <p className="text-l md:text-lg text-text_secondary mt-2">Par goût pour le <strong>code propre, structuré et sécurisé</strong>, je me suis spécialisé en PHP avec le <strong>framework Symfony</strong>, que j’utilise pour développer des solutions robustes et bien pensées. Curieux et polyvalent, je m’ouvre également à d’autres technologies comme <strong>React et Next.js</strong>.</p>
                     <p className="text-l md:text-lg text-text_secondary mt-2">Fortement sensibilisé à <strong>l’expérience utilisateur</strong>, je conçois chaque application en me plaçant du point de vue de l’usager. À l’écoute, empathique et attentif aux retours terrain, je m’efforce de proposer des interfaces intuitives, adaptées aux usages réels et à la logique métier de chaque projet.</p>
                     <div className='mt-4 flex justify-center lg:justify-start'>
                         <p className='badge-secondary mr-2'>Autonome</p>

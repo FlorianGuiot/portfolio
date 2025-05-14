@@ -22,7 +22,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`fixed w-full top-0 left-0 ${isScrolled ? 'bg-primary text-text_light shadow-lg shadow-secondary/50' : 'bg-transparent text-text_dark'} transition-all duration-300 z-50`}>
+    <nav className={`fixed w-full top-0 left-0 ${isScrolled ? 'bg-primary text-text_light shadow-lg shadow-secondary/50' : 'bg-transparent text-text_dark'} transition-all duration-300 z-40`}>
       <div className="container mx-auto flex justify-between items-center py-4 px-6">
         {/* Logo */}
         <a href="#" className="text-2xl font-semibold">Florian Guiot</a>
