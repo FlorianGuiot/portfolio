@@ -106,7 +106,7 @@ export default function Skills() {
       {skillsData.map((skill, index) => (
         <div
         key={index}
-        className={`bg-gradient-to-b w-full from-secondary to-secondary/60 text-text_dark p-6 rounded-lg shadow-lg shadow-secondary/50 cursor-pointer hover:scale-105 transition-transform duration-300 ease-in-out ${
+        className={`bg-gradient-to-b w-full from-background to-background/60 text-text_dark p-6 rounded-lg shadow-lg shadow-secondary/50 cursor-pointer hover:scale-105 transition-transform duration-300 ease-in-out ${
           index === 0 && animateBounce ? "bounce-every-3s" : ""
         }`}
         onClick={() => handleCardClick(index)}
