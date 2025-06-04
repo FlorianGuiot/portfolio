@@ -50,6 +50,11 @@ h3{
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
+.btn-white {
+  @apply py-2 px-4 bg-background text-text_dark  hover:bg-primary_dark hover:text-text_light rounded cursor-pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
 .btn-border-light {
   @apply py-2 px-4 border border-text_light  text-text_light  hover:bg-secondary hover:border-text_dark hover:text-text_dark rounded cursor-pointer;
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
