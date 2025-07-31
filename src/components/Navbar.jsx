@@ -1,5 +1,7 @@
 'use client'; // Ceci rend ce fichier client-side
+
 import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { Bars3Icon, XMarkIcon, ArrowDownTrayIcon } from '@heroicons/react/24/outline'; // Import des icônes Heroicons
 
@@ -25,7 +27,7 @@ const Navbar = () => {
     <nav className={`fixed w-full top-0 left-0 ${isScrolled ? 'bg-primary text-text_light shadow-lg shadow-secondary/50' : 'bg-transparent text-text_dark'} transition-all duration-300 z-40`}>
       <div className="container mx-auto flex justify-between items-center py-4 px-6">
         {/* Logo */}
-        <a href="#" className="text-2xl font-semibold">Florian Guiot</a>
+        <Link href="/" className="text-2xl font-semibold">Florian Guiot</Link>
 
         {/* Menu burger (mobile) */}
         <div className="lg:hidden flex items-center">
@@ -44,11 +46,11 @@ const Navbar = () => {
         </div>
 
         {/* Menu desktop */}
-        <div className="hidden lg:flex space-x-4 flex items-center">
-          <a href="#home" className="navbar_link">Accueil</a>
-          <a href="#projects" className="navbar_link">Mes projets</a>
-          <a href="#contact" className="navbar_link">Contact</a>
-          <a href="#cv" className={`${isScrolled ? 'btn-border-light' : 'btn-primary'} flex items-center`}><ArrowDownTrayIcon className="h-6 w-6 pr-2" /> <span className='text-nowrap'> Mon CV</span></a>
+        <div className="hidden lg:flex space-x-4 items-center">
+          <Link href="/#home" className="navbar_link">Accueil</Link>
+          <Link href="/#projects" className="navbar_link">Mes projets</Link>
+          <Link href="/#contact" className="navbar_link">Contact</Link>
+          <Link href="#cv" className={`${isScrolled ? 'btn-border-light' : 'btn-primary'} flex items-center`}><ArrowDownTrayIcon className="h-6 w-6 pr-2" /> <span className='text-nowrap'> Mon CV</span></Link>
         </div>
 
         {/* Menu mobile */}

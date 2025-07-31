@@ -6,7 +6,7 @@ export default function ProjectsFallback() {
                 <div className="flex justify-center">
                     <div className="bg-gray-200 animate-pulse rounded-xl h-12 w-96"></div>
                 </div>
-                <div className="grid grid-cols-2 gap-4 p-8">
+                <div className="grid md:grid-cols-4 gap-4 p-8">
                     {Array.from({ length: 4 }).map((_, i) => (
                         <div key={i} className="w-full aspect-square bg-gray-200 animate-pulse rounded-xl" />
                     ))}

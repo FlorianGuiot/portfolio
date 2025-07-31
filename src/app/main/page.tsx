@@ -3,6 +3,7 @@ import Hero from '../../sections/home/hero';
 import AboutMe from '../../sections/home/aboutMe';
 import Projects from '../../sections/home/projects';
 import ProjectsFallback from '../../components/ProjectsFallback';
+import Timeline from "../../sections/home/Timeline";
 
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
         <Suspense fallback={<ProjectsFallback />}>
           <Projects />
         </Suspense>
+        <Timeline/>
       </div>
   );
 }
